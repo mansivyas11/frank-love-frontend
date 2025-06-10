@@ -15,7 +15,7 @@ async function submitLove() {
     `${yourName} ❤️ ${crushName} = ${score}% love`;
 
   try {
-    await fetch("https://frank-love-calculator-2.onrender.com/api/love", {
+    await fetch("https://frank-love-backend-1.onrender.com", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ yourName, crushName, score })
